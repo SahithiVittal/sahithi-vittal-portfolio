@@ -67,6 +67,31 @@ dr<!DOCTYPE html>
   scroll-behavior: smooth;
     }
 
+    .project-card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:all 0.3s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+
+.project-card .card-img-top{
+    height:220px;
+    object-fit:cover;
+}
+
+.tech-stack{
+    font-size:14px;
+    color:#6c757d;
+}
+
+.project-badge{
+    margin-bottom:8px;
+}
+
   </style>
 </head>
 
@@ -108,6 +133,10 @@ dr<!DOCTYPE html>
         </li>
 
         <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+
+        <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
         </li>
 
@@ -117,408 +146,629 @@ dr<!DOCTYPE html>
   </div>
 </nav>
 <!-- ================= END NAVBAR ================= -->
- <!-- ================= HERO SECTION ================= -->
-<section id="home" class="py-5 bg-white">
-  <div class="container text-center">
+<!-- ================= HERO SECTION ================= -->
 
-    <!-- Name -->
-    <h1 class="fw-bold mb-2" style="font-size:48px;">
-      Sahithi Vittal
+<section id="home" class="py-5 bg-white" style="margin-top:80px;">
+  <div class="container">
+    <div class="row align-items-center">
+
+```
+  <!-- Left Side -->
+  <div class="col-lg-7">
+
+    <h1 class="display-3 fw-bold mb-3">
+      Hi, I'm <span class="text-primary">Sahithi Vittal</span>
     </h1>
 
-    <!-- Role -->
-    <h4 class="text-primary mb-1">
-      Data Analyst
-    </h4>
+    <h3 class="mb-3">
+      Data Analyst | Data Scientist
+    </h3>
 
-    <!-- Education / Credibility -->
-    <p class="text-muted mb-4" style="font-size:16px;">
-      Statistics Graduate | PG Program in Data Science
+    <p class="text-muted fs-5">
+      Applied Statistics | SQL | Python | Power BI | Machine Learning
     </p>
 
-    <!-- Tagline -->
-    <p class="text-muted mx-auto" style="max-width:700px; font-size:18px;">
-      Helping businesses make data-driven decisions by transforming raw data
-      into meaningful insights.
+    <p class="text-muted mt-4" style="max-width:650px;">
+      Building analytics solutions across banking, e-commerce, and operations domains through statistical analysis, machine learning, and business intelligence.
     </p>
 
-    <!-- Action Buttons -->
     <div class="mt-4">
 
-      <a href="#projects" class="btn btn-primary me-2">
+      <a href="#projects"
+         class="btn btn-primary me-3">
         View Projects
       </a>
 
-      <a href="https://drive.google.com/file/d/1PjU_ZAqZ_W1deYNdcoQRBxa8GUmNJeWE/view?usp=sharing"
-         class="btn btn-outline-secondary me-2"
+      <a href="YOUR_DATA_ANALYST_RESUME_LINK"
+         class="btn btn-outline-dark me-3"
          target="_blank">
-        Download Resume
+        Data Analyst Resume
       </a>
 
-      <a href="#contact" class="btn btn-outline-secondary">
-        Contact Me
+      <a href="YOUR_DATA_SCIENTIST_RESUME_LINK"
+         class="btn btn-outline-primary"
+         target="_blank">
+        Data Scientist Resume
       </a>
-
-    </div>
-
-  </div>
-</section>
-<!-- ================= END HERO SECTION ================= -->
-
-
-
-<!-- ================= ABOUT SECTION ================= -->
-<section id="about" class="py-5 bg-white">
-  <div class="container text-center">
-
-    <h1 class="fw-bold mb-5" style="font-size:56px;">About</h1>
-
-    <div class="mb-4 d-flex justify-content-center">
-      <img
-        src="images/about/PHOTO.jpeg"
-        alt="Profile Photo"
-        class="rounded-circle border border-3"
-        style="width:200px; height:200px; object-fit:cover;"
-      >
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-lg-6 col-md-8 col-sm-10">
-
-        <p class="text-muted" style="font-size:18px; line-height:1.8;">
-         I am Sahithi Vittal, a Data Analyst with a strong foundation in Statistics and hands-on experience transforming raw data into actionable business insights. 
-         I hold a Bachelor’s degree in Statistics and have completed a Post Graduate Program in Data Science, giving me both analytical depth and practical exposure.
-
-        <p class="text-muted mt-4" style="font-size:18px; line-height:1.8;">
-          I work with Python, SQL, Excel, Tableau, and Machine Learning, with experience in data cleaning, exploratory data analysis (EDA), feature engineering, and predictive modeling on real-world datasets.
-           My long-term goal is to grow into a Data Scientist, applying data-driven solutions to solve meaningful business problems.
-        </p>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= PROJECTS SECTION ================= -->
-<!-- ================= PROJECTS SECTION ================= -->
-
-<section id="projects" class="py-5 bg-light">
-  <div class="container">
-
-```
-<div class="text-center mb-5">
-  <h1 class="fw-bold" style="font-size:56px;">Projects</h1>
-</div>
-
-<div class="row g-4">
-
-  <!-- Project 1 -->
-  <div class="col-lg-4 col-md-6 col-sm-12">
-    <div class="card h-100 shadow-sm">
-      <img src="images/Projects/myntra.png" class="card-img-top" alt="Myntra Project">
-      <div class="card-body d-flex flex-column">
-
-        <h5 class="card-title">Myntra Customer Satisfaction Analysis</h5>
-
-        <p class="card-text">
-          Analyzed Myntra customer and product data to evaluate brand perception and
-          customer satisfaction. Built a classification model to predict satisfaction
-          categories with ~80% accuracy and identified key drivers influencing customer
-          experience through EDA and feature analysis.
-        </p>
-
-        <p class="text-muted">
-          <strong>Tools:</strong> Python, Pandas, Scikit-learn, Tableau
-        </p>
-
-        <div class="mt-auto">
-          <a href="https://github.com/SahithiVittal/myntra-satisfaction-predictor"
-             class="btn btn-outline-secondary btn-sm"
-             target="_blank">
-            Github Link
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 2 -->
-  <div class="col-lg-4 col-md-6 col-sm-12">
-    <div class="card h-100 shadow-sm">
-      <img src="images/Projects/hotel_booking_cancellation.png" class="card-img-top" alt="Hotel Booking Project">
-      <div class="card-body d-flex flex-column">
-
-        <h5 class="card-title">Hotel Booking Cancellation Prediction</h5>
-
-        <p class="card-text">
-          Analyzed hotel booking data to identify factors driving cancellations.
-          Performed data cleaning and exploratory analysis, and trained a Random
-          Forest model achieving ~86% accuracy to predict booking cancellations
-          and support better operational decisions.
-        </p>
-
-        <p class="text-muted">
-          <strong>Tools:</strong> Python, Pandas, Random Forest, Matplotlib
-        </p>
-
-        <div class="mt-auto">
-          <a href="https://github.com/SahithiVittal/hotel-cancellation-predictor"
-             class="btn btn-outline-secondary btn-sm"
-             target="_blank">
-            Github Link
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 3 -->
-  <div class="col-lg-4 col-md-6 col-sm-12">
-    <div class="card h-100 shadow-sm">
-      <img src="images/Projects/aid_allocation.png" class="card-img-top" alt="NGO Funding Project">
-      <div class="card-body d-flex flex-column">
-
-        <h5 class="card-title">Help International – NGO Funding Analysis</h5>
-
-        <p class="card-text">
-          Conducted exploratory data analysis and clustering on socio-economic
-          data to identify countries in urgent need of aid. Used clustering
-          techniques to segment countries and provide data-driven recommendations
-          for effective resource allocation.
-        </p>
-
-        <p class="text-muted">
-          <strong>Tools:</strong> Python, Pandas, K-Means Clustering
-        </p>
-
-        <div class="mt-auto">
-          <a href="https://github.com/SahithiVittal/Clustering"
-             class="btn btn-outline-secondary btn-sm"
-             target="_blank">
-            Github Link
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 4 -->
-  <div class="col-lg-4 col-md-6 col-sm-12">
-    <div class="card h-100 shadow-sm">
-      <img src="images/Projects/quick_commerce_sql.png" class="card-img-top" alt="Quick Commerce SQL Project">
-      <div class="card-body d-flex flex-column">
-
-        <h5 class="card-title">Quick Commerce Data Analysis using SQL</h5>
-
-        <p class="card-text">
-          Analyzed quick commerce delivery data using SQL to understand order trends,
-          customer purchasing behavior, and product demand. Wrote complex queries
-          using joins, aggregations, subqueries, and window functions to generate
-          actionable business insights for operational decision-making.
-        </p>
-
-        <p class="text-muted">
-          <strong>Tools:</strong> SQL, MySQL
-        </p>
-
-        <div class="mt-auto">
-          <a href="https://github.com/SahithiVittal/quick-commerce-sql-analysis"
-             class="btn btn-outline-secondary btn-sm"
-             target="_blank">
-            Github Link
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-</div>
-```
-
-  </div>
-</section>
-
-</section>
-
-<!-- ================= SKILLS SECTION ================= -->
- <section id="skills" class="py-5 bg-white">
-  <div class="container text-dark">
-
-    <div class="text-center mb-5">
-      <h1 class="fw-bold" style="font-size:56px;">Skills</h1>
-    </div>
-
-    <!-- Programming Languages -->
-    <h6 class="text-uppercase skills-heading mb-3">Programming & Query Languages</h6>
-    <div class="row g-4 mb-5">
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="skill-tile text-center p-4">
-          <img src="images/skills/python.png" width="40">
-          <p class="mb-0">Python</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="skill-tile text-center p-4">
-          <img src="images/skills/mysql.png" width="40">
-          <p class="mb-0">SQL</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Python Libraries -->
-    <h6 class="text-uppercase skills-heading mb-3">Python Libraries</h6>
-    <div class="row g-4 mb-5">
-      <div class="col-lg-3 col-md-4 col-sm-6"><div class="skill-tile text-center p-4"><img src="images/skills/numpy.png" width="40"><p>NumPy</p></div></div>
-      <div class="col-lg-3 col-md-4 col-sm-6"><div class="skill-tile text-center p-4"><img src="images/skills/pandas.png" width="40"><p>Pandas</p></div></div>
-      <div class="col-lg-3 col-md-4 col-sm-6"><div class="skill-tile text-center p-4"><img src="images/skills/matplotlib.png" width="40"><p>Matplotlib</p></div></div>
-      <div class="col-lg-3 col-md-4 col-sm-6"><div class="skill-tile text-center p-4"><img src="images/skills/seaborn.svg" width="40"><p>Seaborn</p></div></div>
-      <div class="col-lg-3 col-md-4 col-sm-6"><div class="skill-tile text-center p-4"><img src="images/skills/sklearn.png" width="40"><p>Scikit-learn</p></div></div>
-    </div>
-
-    <!-- Tools -->
-    <h6 class="text-uppercase skills-heading mb-3">Tools</h6>
-    <div class="row g-4 mb-5">
-      <div class="col-lg-3 col-md-4 col-sm-6"><div class="skill-tile text-center p-4"><img src="images/skills/excel.png" width="40"><p>Microsoft Excel</p></div></div>
-      <div class="col-lg-3 col-md-4 col-sm-6"><div class="skill-tile text-center p-4"><img src="images/skills/tableau.png" width="40"><p>Tableau</p></div></div>
-      <div class="col-lg-3 col-md-4 col-sm-6"><div class="skill-tile text-center p-4"><img src="images/skills/jupyter.png" width="40"><p>Jupyter Notebook</p></div></div>
-      <div class="col-lg-3 col-md-4 col-sm-6"><div class="skill-tile text-center p-4"><img src="icons/github.png" width="40"><p>GitHub</p></div></div>
-      <div class="col-lg-3 col-md-4 col-sm-6"><div class="skill-tile text-center p-4"><img src="images/skills/streamlit.png" width="40"><p class="mb-0">Streamlit</p>
-  </div>
-</div>
-    </div>
-
-    <!-- Core Concepts -->
-    <h6 class="text-uppercase skills-heading mb-3">Core Concepts</h6>
-    <div class="row g-4 mb-5">
-      <div class="col-lg-3 col-md-4 col-sm-6"><div class="skill-tile text-center p-4"><img src="images/skills/data_cleaning.png" width="40"><p>Data Cleaning & Preprocessing</p></div></div>
-      <div class="col-lg-3 col-md-4 col-sm-6"><div class="skill-tile text-center p-4"><img src="images/skills/eda.png" width="40"><p>Exploratory Data Analysis</p></div></div>
-      <div class="col-lg-3 col-md-4 col-sm-6"><div class="skill-tile text-center p-4"><img src="images/skills/feature_engineering.png" width="40"><p>Feature Engineering</p></div></div>
-      <div class="col-lg-3 col-md-4 col-sm-6"><div class="skill-tile text-center p-4"><img src="images/skills/statistics.png" width="40"><p>Statistical Analysis</p></div></div>
-      <div class="col-lg-3 col-md-4 col-sm-6"><div class="skill-tile text-center p-4"><img src="images/skills/visualization.png" width="40"><p>Data Visualization</p></div></div>
-      <div class="col-lg-3 col-md-4 col-sm-6"><div class="skill-tile text-center p-4"><img src="images/skills/ml.png" width="40"><p>Supervised Machine Learning</p></div></div>
-      <div class="col-lg-3 col-md-4 col-sm-6"><div class="skill-tile text-center p-4"><img src="images/skills/business_insights.png" width="40"><p class="mb-0">Business Insights & Decision Making</p></div>
-</div>
-
-    </div>
-
-    <!-- Coding Platforms -->
-    <!-- Coding Platforms -->
-<h6 class="text-uppercase skills-heading mb-3">Coding Platforms</h6>
-<div class="row g-4">
-  
-  <!-- HackerRank -->
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <a href="https://www.hackerrank.com/profile/sahithi_vittal"
-       target="_blank"
-       class="text-decoration-none">
-      <div class="skill-tile text-center p-4">
-        <img src="icons/hackerrank.png" width="40">
-        <p class="mb-0">HackerRank</p>
-      </div>
-    </a>
-  </div>
-
-  <!-- LeetCode -->
-  <div class="col-lg-3 col-md-4 col-sm-6">
-    <a href="https://leetcode.com/u/Sahithi_Vittal/"
-       target="_blank"
-       class="text-decoration-none">
-      <div class="skill-tile text-center p-4">
-        <img src="icons/leetcode.png" width="40">
-        <p class="mb-0">LeetCode</p>
-      </div>
-    </a>
-  </div>
-
-</div>
-
-</section>
-
-<!-- ================= EDUCATION SECTION ================= -->
-<section id="education" class="py-5 bg-white">
-  <div class="container">
-
-    <div class="text-center mb-5">
-      <h1 class="fw-bold" style="font-size:56px;">Education</h1>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-lg-8 col-md-10">
-
-        <!-- PG Program -->
-        <div class="mb-4">
-          <h5 class="fw-bold mb-1">Post Graduate Program in Data Science</h5>
-          <p class="mb-1 text-muted">Great Learning</p>
-          <p class="text-muted">2024 – 2025</p>
-        </div>
-
-        <!-- Bachelor's Degree -->
-        <div>
-          <h5 class="fw-bold mb-1">Bachelor of Science in Statistics</h5>
-          <p class="mb-1 text-muted">Stanley Degree and PG College for Women</p>
-          <p class="text-muted">2019 – 2022</p>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- ================= END EDUCATION SECTION ================= -->
-
-<!-- ================= CONTACT SECTION ================= -->
-<!-- ================= CONTACT ME SECTION ================= -->
-<section id="contact" class="py-5 bg-white">
-  <div class="container text-dark text-center">
-
-    <!-- Heading -->
-    <h1 class="fw-bold mb-5" style="font-size:56px;">Contact Me</h1>
-
-    <!-- Contact Info -->
-    <div class="row justify-content-center mb-5">
-
-      <!-- Email -->
-      <div class="col-md-5 col-sm-12 mb-3 mb-md-0 d-flex justify-content-center align-items-center">
-        <img src="icons/mail.png" width="28" class="me-2" alt="Email">
-       <a href="mailto:sahithi.vittal@gmail.com"
-   class="text-dark text-decoration-none"
-   style="font-size:18px;">
-  sahithi.vittal@gmail.com
-</a>
 
     </div>
 
     <!-- Social Icons -->
-    <div class="d-flex justify-content-center flex-wrap gap-3">
+    <div class="mt-4">
 
       <a href="https://www.linkedin.com/in/vittal-sahithi/"
-   target="_blank"
-   class="social-icon"
-   data-bs-toggle="tooltip"
-   title="LinkedIn">
-  <img src="icons/linkedin.png" width="22" alt="LinkedIn">
-</a>
+         target="_blank"
+         class="me-3">
+        <img src="icons/linkedin.png" width="32">
+      </a>
 
-<a href="https://github.com/SahithiVittal"
-   target="_blank"
-   class="social-icon"
-   data-bs-toggle="tooltip"
-   title="GitHub">
-  <img src="icons/github.png" width="22" alt="GitHub">
-</a>
+      <a href="https://github.com/SahithiVittal"
+         target="_blank"
+         class="me-3">
+        <img src="icons/github.png" width="32">
+      </a>
 
-
+      <a href="mailto:sahithi.vittal@gmail.com">
+        <img src="icons/mail.png" width="32">
+      </a>
 
     </div>
 
   </div>
+
+  <!-- Right Side -->
+  <div class="col-lg-5 text-center mt-5 mt-lg-0">
+
+    <img src="images/about/PHOTO.jpeg"
+         class="img-fluid rounded-circle shadow"
+         style="width:300px;height:300px;object-fit:cover;"
+         alt="Profile Photo">
+
+  </div>
+
+</div>
+```
+
+  </div>
 </section>
-<!-- ================= END CONTACT ME SECTION ================= -->
+
+<!-- ================= ABOUT SECTION ================= -->
+
+<section id="about" class="py-5 bg-white">
+  <div class="container">
+
+```
+<div class="text-center mb-5">
+  <h1 class="fw-bold" style="font-size:56px;">About Me</h1>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-lg-8">
+
+    <p class="text-muted text-center" style="font-size:18px; line-height:1.9;">
+      I'm <strong>Sahithi Vittal</strong>, a data professional with a background in Applied Statistics and hands-on experience in SQL, Python, Power BI, and Machine Learning. I enjoy transforming raw data into meaningful insights and building analytics solutions that support data-driven decision making.
+    </p>
+
+    <p class="text-muted text-center mt-4" style="font-size:18px; line-height:1.9;">
+      Through projects spanning banking, e-commerce, and operations domains, I have worked on exploratory data analysis, feature engineering, predictive modeling, and statistical analysis. Prior experience as a Mathematics Lecturer strengthened my analytical thinking, communication, and problem-solving skills.
+    </p>
+
+  </div>
+</div>
+```
+
+  </div>
+</section>
+<!-- ================= END ABOUT SECTION ================= -->
+
+
+<!-- ================= PROJECTS SECTION ================= -->
+
+<section id="projects" class="py-5 bg-light">
+<div class="container">
+
+<div class="text-center mb-5">
+<h1 class="fw-bold" style="font-size:56px;">Projects</h1>
+</div>
+
+<div class="row g-4">
+
+<!-- Project 1 -->
+
+<div class="col-lg-6">
+<div class="card project-card shadow h-100">
+
+<img src="images/Projects/loan_default.png"
+class="card-img-top"
+alt="Loan Default">
+
+<div class="card-body d-flex flex-column">
+
+<h4 class="fw-bold">🏦 Loan Default Risk Analytics</h4>
+
+<p class="text-muted">
+Built machine learning models and statistical workflows to identify key drivers of customer loan default risk.
+</p>
+
+<div class="mb-3">
+<span class="badge bg-primary project-badge">36K+ Records</span>
+<span class="badge bg-success project-badge">Random Forest</span>
+<span class="badge bg-danger project-badge">XGBoost</span>
+<span class="badge bg-dark project-badge">Risk Analytics</span>
+</div>
+
+<p class="tech-stack">
+Python • Pandas • Scikit-Learn • XGBoost
+</p>
+
+<div class="mt-auto">
+<a href="https://github.com/SahithiVittal/-Loan-Default-Prediction"
+class="btn btn-outline-primary"
+target="_blank">
+GitHub Repository
+</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Project 2 -->
+
+<div class="col-lg-6">
+<div class="card project-card shadow h-100">
+
+<img src="images/Projects/quick_commerce_sql.png"
+class="card-img-top"
+alt="Quick Commerce">
+
+<div class="card-body d-flex flex-column">
+
+<h4 class="fw-bold">🛒 Quick Commerce Sales & Operations Analysis</h4>
+
+<p class="text-muted">
+Analyzed over 1M order records to uncover revenue trends and optimize delivery operations.
+</p>
+
+<div class="mb-3">
+<span class="badge bg-primary">1M+ Records</span>
+<span class="badge bg-success">SQL</span>
+<span class="badge bg-warning text-dark">CTEs</span>
+<span class="badge bg-dark">Operations Analytics</span>
+</div>
+
+<p class="tech-stack">
+SQL • Python • MySQL
+</p>
+
+<div class="mt-auto">
+<a href="https://github.com/SahithiVittal/Quick-Commerce-Analytics-Dashboard"
+class="btn btn-outline-primary"
+target="_blank">
+GitHub Repository
+</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Project 3 -->
+
+<div class="col-lg-6">
+<div class="card project-card shadow h-100">
+
+<img src="images/Projects/myntra.png"
+class="card-img-top"
+alt="Myntra">
+
+<div class="card-body d-flex flex-column">
+
+<h4 class="fw-bold">⭐ Customer Satisfaction & Segmentation Analysis</h4>
+
+<p class="text-muted">
+Developed machine learning models to understand customer satisfaction and pricing behavior.
+</p>
+
+<div class="mb-3">
+<span class="badge bg-primary">100K+ Records</span>
+<span class="badge bg-success">Feature Engineering</span>
+<span class="badge bg-danger">XGBoost</span>
+<span class="badge bg-dark">Customer Analytics</span>
+</div>
+
+<p class="tech-stack">
+Python • Scikit-Learn • Tableau
+</p>
+
+<div class="mt-auto">
+<a href="https://github.com/SahithiVittal/myntra-satisfaction-predictor"
+class="btn btn-outline-primary"
+target="_blank">
+GitHub Repository
+</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Project 4 -->
+
+<div class="col-lg-6">
+<div class="card project-card shadow h-100">
+
+<img src="images/Projects/hotel_booking_cancellation.png"
+class="card-img-top"
+alt="Hotel">
+
+<div class="card-body d-flex flex-column">
+
+<h4 class="fw-bold">🏨 Hotel Booking Cancellation Prediction</h4>
+
+<p class="text-muted">
+Predicted hotel booking cancellations to support customer retention and revenue management.
+</p>
+
+<div class="mb-3">
+<span class="badge bg-primary">86% Accuracy</span>
+<span class="badge bg-success">Classification</span>
+<span class="badge bg-danger">Random Forest</span>
+<span class="badge bg-dark">Customer Retention</span>
+</div>
+
+<p class="tech-stack">
+Python • Pandas • Matplotlib
+</p>
+
+<div class="mt-auto">
+<a href="https://github.com/SahithiVittal/hotel-cancellation-predictor"
+class="btn btn-outline-primary"
+target="_blank">
+GitHub Repository
+</a>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ================= SKILLS SECTION ================= -->
+<!-- ================= SKILLS SECTION ================= -->
+
+<section id="skills" class="py-5 bg-white">
+  <div class="container">
+
+```
+<!-- Heading -->
+<div class="text-center mb-5">
+  <h1 class="fw-bold" style="font-size:56px;">Skills</h1>
+</div>
+
+<div class="row g-4">
+
+  <!-- Programming & Analytics -->
+  <div class="col-lg-6">
+    <div class="card shadow-sm border-0 h-100">
+      <div class="card-body">
+        <h4 class="fw-bold mb-4">Programming & Analytics</h4>
+
+        <span class="badge bg-primary p-2 me-2 mb-2">Python</span>
+        <span class="badge bg-primary p-2 me-2 mb-2">SQL</span>
+        <span class="badge bg-primary p-2 me-2 mb-2">Power BI</span>
+        <span class="badge bg-primary p-2 me-2 mb-2">Excel</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Machine Learning -->
+  <div class="col-lg-6">
+    <div class="card shadow-sm border-0 h-100">
+      <div class="card-body">
+        <h4 class="fw-bold mb-4">Machine Learning</h4>
+
+        <span class="badge bg-success p-2 me-2 mb-2">Regression</span>
+        <span class="badge bg-success p-2 me-2 mb-2">Classification</span>
+        <span class="badge bg-success p-2 me-2 mb-2">Random Forest</span>
+        <span class="badge bg-success p-2 me-2 mb-2">XGBoost</span>
+        <span class="badge bg-success p-2 me-2 mb-2">Scikit-Learn</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Analysis -->
+  <div class="col-lg-6">
+    <div class="card shadow-sm border-0 h-100">
+      <div class="card-body">
+        <h4 class="fw-bold mb-4">Data Analysis</h4>
+
+        <span class="badge bg-warning text-dark p-2 me-2 mb-2">Data Cleaning</span>
+        <span class="badge bg-warning text-dark p-2 me-2 mb-2">EDA</span>
+        <span class="badge bg-warning text-dark p-2 me-2 mb-2">Feature Engineering</span>
+        <span class="badge bg-warning text-dark p-2 me-2 mb-2">Statistical Analysis</span>
+        <span class="badge bg-warning text-dark p-2 me-2 mb-2">Hypothesis Testing</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Visualization -->
+  <div class="col-lg-6">
+    <div class="card shadow-sm border-0 h-100">
+      <div class="card-body">
+        <h4 class="fw-bold mb-4">Visualization</h4>
+
+        <span class="badge bg-info text-dark p-2 me-2 mb-2">Power BI</span>
+        <span class="badge bg-info text-dark p-2 me-2 mb-2">Tableau</span>
+        <span class="badge bg-info text-dark p-2 me-2 mb-2">Matplotlib</span>
+        <span class="badge bg-info text-dark p-2 me-2 mb-2">Seaborn</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tools -->
+  <div class="col-lg-6">
+    <div class="card shadow-sm border-0 h-100">
+      <div class="card-body">
+        <h4 class="fw-bold mb-4">Tools</h4>
+
+        <span class="badge bg-secondary p-2 me-2 mb-2">MySQL</span>
+        <span class="badge bg-secondary p-2 me-2 mb-2">Jupyter Notebook</span>
+        <span class="badge bg-secondary p-2 me-2 mb-2">GitHub</span>
+        <span class="badge bg-secondary p-2 me-2 mb-2">Streamlit</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Coding Platforms -->
+  <div class="col-lg-6">
+    <div class="card shadow-sm border-0 h-100">
+      <div class="card-body">
+        <h4 class="fw-bold mb-4">Coding Platforms</h4>
+
+        <a href="https://www.hackerrank.com/profile/sahithi_vittal"
+           target="_blank"
+           class="btn btn-outline-success me-3 mb-2">
+          HackerRank
+        </a>
+
+        <a href="https://leetcode.com/u/Sahithi_Vittal/"
+           target="_blank"
+           class="btn btn-outline-warning mb-2">
+          LeetCode
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+</section>
+<!-- ================= END SKILLS SECTION ================= -->
+
+<!-- ================= EDUCATION SECTION ================= -->
+
+<section id="education" class="py-5 bg-light">
+  <div class="container">
+
+```
+<div class="text-center mb-5">
+  <h1 class="fw-bold" style="font-size:56px;">Education</h1>
+</div>
+
+<div class="row justify-content-center">
+
+  <!-- Great Lakes -->
+  <div class="col-lg-5 mb-4">
+    <div class="card shadow-sm border-0 h-100">
+      <div class="card-body">
+
+        <h4 class="fw-bold">
+          Post Graduate Program in Data Science & Engineering
+        </h4>
+
+        <h6 class="text-primary mt-3">
+          Great Lakes Institute of Management
+        </h6>
+
+        <p class="text-muted">
+          2024 – 2025
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bachelor's -->
+  <div class="col-lg-5 mb-4">
+    <div class="card shadow-sm border-0 h-100">
+      <div class="card-body">
+
+        <h4 class="fw-bold">
+          Bachelor of Science in Applied Statistics
+        </h4>
+
+        <h6 class="text-primary mt-3">
+          Stanley Degree & PG College for Women
+        </h6>
+
+        <p class="text-muted">
+          2019 – 2022
+        </p>
+
+        <p>
+          CGPA: 8.67/10
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+</section>
+
+
+<!-- ================= EXPERIENCE SECTION ================= -->
+<section id="experience" class="py-5 bg-light">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-5">
+  <h1 class="fw-bold" style="font-size:56px;">Experience</h1>
+</div>
+
+<div class="row justify-content-center">
+
+  <div class="col-lg-8">
+
+    <div class="card shadow-sm border-0">
+
+      <div class="card-body">
+
+        <div class="d-flex justify-content-between flex-wrap">
+
+          <h4 class="fw-bold">
+            Junior Lecturer – Mathematics
+          </h4>
+
+          <h6 class="text-muted">
+            2023 – 2024
+          </h6>
+
+        </div>
+
+        <h6 class="text-primary mt-2">
+          Intermediate College, Hyderabad
+        </h6>
+
+        <hr>
+
+        <ul class="text-muted" style="line-height:1.8;">
+
+          <li>
+            Delivered mathematics lectures and mentored students in analytical problem-solving.
+          </li>
+
+          <li>
+            Designed assessments and learning materials to strengthen conceptual understanding and quantitative reasoning.
+          </li>
+
+          <li>
+            Developed communication, presentation, and problem-solving skills through classroom instruction and student mentoring.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </div>
+</section>
+
+<!-- ================= END EXPERIENCE SECTION ================= -->
+  
+<!-- ================= CONTACT SECTION ================= -->
+<section id="contact" class="py-5 bg-white">
+  <div class="container text-dark text-center">
+
+   <!-- ================= CONTACT SECTION ================= -->
+
+<section id="contact" class="py-5 bg-white">
+  <div class="container text-dark text-center">
+
+```
+<!-- Heading -->
+<h1 class="fw-bold mb-3" style="font-size:56px;">
+  Get In Touch
+</h1>
+
+<p class="text-muted mb-5" style="font-size:18px;">
+  I'm open to Data Analyst and Data Scientist opportunities. Feel free to connect!
+</p>
+
+<!-- Email -->
+<div class="mb-4 d-flex justify-content-center align-items-center">
+
+  <img src="icons/mail.png"
+       width="30"
+       class="me-2"
+       alt="Email">
+
+  <a href="mailto:sahithi.vittal@gmail.com"
+     class="text-dark text-decoration-none"
+     style="font-size:18px;">
+    sahithi.vittal@gmail.com
+  </a>
+
+</div>
+
+<!-- Location -->
+<div class="mb-4 d-flex justify-content-center align-items-center">
+
+  <img src="icons/location.png"
+       width="30"
+       class="me-2"
+       alt="Location">
+
+  <span class="text-muted" style="font-size:18px;">
+    Hyderabad, Telangana, India
+  </span>
+
+</div>
+
+<!-- Social Icons -->
+<div class="d-flex justify-content-center flex-wrap gap-4">
+
+  <a href="https://www.linkedin.com/in/vittal-sahithi/"
+     target="_blank"
+     class="social-icon"
+     data-bs-toggle="tooltip"
+     title="LinkedIn">
+
+    <img src="icons/linkedin.png"
+         width="28"
+         alt="LinkedIn">
+
+  </a>
+
+  <a href="https://github.com/SahithiVittal"
+     target="_blank"
+     class="social-icon"
+     data-bs-toggle="tooltip"
+     title="GitHub">
+
+    <img src="icons/github.png"
+         width="28"
+         alt="GitHub">
+
+  </a>
+
+</div>
+
+
+  </div>
+</section>
+<!-- ================= END CONTACT SECTION ================= -->
+<footer class="py-4 bg-dark text-center text-light">
+  <p class="mb-0">
+    © 2026 Sahithi Vittal | Built with HTML, Bootstrap & GitHub Pages
+  </p>
+</footer>
 
 
 <!-- Bootstrap JS (for tooltips) -->
